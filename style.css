@@ -1,12 +1,19 @@
 
         :root {
+            --preto: #000000;
+            --vermelho-claro: #ff0054;
+            --laranja: #fe6a00;
+            --roxo: #bd01fe;
+            --ciano: #01f0ff;
+            --branco: ##f5f5f5;
+
             --azul-primario: #1a3a5c;
             --azul-escuro: #0d2137;
             --dourado: #c8963e;
             --dourado-claro: #e0b860;
             --verde-brasil: #009c3b;
             --amarelo-brasil: #ffdf00;
-            --branco: #fefefe;
+ 
             --cinza-claro: #f4f4f5;
             --cinza-medio: #d4d4d8;
             --cinza-escuro: #52525b;
@@ -48,7 +55,7 @@
             left: 0;
             right: 0;
             z-index: 1000;
-            background: rgba(13, 33, 55, 0.97);
+            background: var(--vermelho-claro);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border-bottom: 2px solid rgba(200, 150, 62, 0.3);
@@ -212,7 +219,8 @@
 
         /* ========== HERO (PÁGINA PRINCIPAL) ========== */
         .hero {
-            background: linear-gradient(160deg, #0d2137 0%, #1a3a5c 30%, #0f2840 70%, #0a1929 100%);
+            /*background: linear-gradient(160deg, #0d2137 0%, #1a3a5c 30%, #0f2840 70%, #0a1929 100%);*/
+            background: var(--roxo);
             color: var(--branco);
             padding: 6rem 2rem 5rem;
             position: relative;
@@ -568,7 +576,7 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: var(--azul-primario);
+            background: var(--vermelho-claro);
             color: var(--branco);
             padding: 0.7rem 1.4rem;
             border-radius: 50px;
@@ -578,8 +586,10 @@
             transition: var(--transicao);
         }
         .rede-social-link:hover {
-            background: var(--azul-escuro);
             transform: translateY(-2px);
+        }
+        .rede-social-link i {
+            font-size: 1rem;
         }
 
         .form-card {
@@ -705,6 +715,10 @@
             .hero-content h1 {
                 font-size: 2.3rem;
             }
+            .votar-em-mim-container{
+                grid-template-columns: 1fr;
+            }
+
             .sobre-container {
                 grid-template-columns: 1fr;
             }
