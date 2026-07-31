@@ -25,6 +25,12 @@
             --transicao: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             --borda-radius: 16px;
             --borda-radius-sm: 10px;
+
+            /*====== 16 pontos contra o sistema ======*/
+            --coluna-direita: 12fr;
+            --coluna-esquerda: 2fr;
+
+
         }
 
         * {
@@ -423,79 +429,44 @@
             font-weight: 600;
         }
 
-        /* ========== SOBRE / TRAJETÓRIA ========== */
-        .sobre {
-            padding: 5rem 2rem;
-            background: var(--cinza-claro);
+        /* ========== 16 pontos contra o sistema ========== */
+        .sistema-pontos-container{
+            background: #009c3b;
         }
-        .sobre-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
+        
+        .pontos-container{
+            outline-style: solid;
+            display: flex;
             align-items: center;
+            justify-self: center;
+            justify-items: center;
+            justify-content: center;
+            gap: 100px;
+
+            width: 1000px;
+
+            background: #1a3a5c;
         }
-        .sobre-texto h2 {
-            font-size: 2.4rem;
-            font-weight: 800;
-            color: var(--roxo);
-            margin-bottom: 1.2rem;
-            letter-spacing: -0.5px;
+
+        .pontos-content{
+            outline-style: solid;
+            display: inline-flex;
+
         }
-        .sobre-texto h2 span {
-            color: var(--dourado);
+        .pontos-content ul{
+            list-style: none;
+            margin: 10px 10px;
         }
-        .sobre-texto p {
-            font-size: 1.05rem;
-            color: var(--cinza-escuro);
-            margin-bottom: 1rem;
+        .pontos-content li{
+            outline-style: solid;
+            border-radius: 5px;
+            margin: 10px auto;
+            padding: 5px auto;
+            min-width: 100px;
+            max-width: fit-content;
+            text-align: center;
         }
-        .timeline-item {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1.2rem;
-            align-items: flex-start;
-        }
-        .timeline-ano {
-            background: var(--dourado);
-            color: var(--roxo);
-            font-weight: 800;
-            padding: 0.3rem 0.9rem;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            flex-shrink: 0;
-        }
-        .timeline-texto {
-            color: var(--texto-escuro);
-            font-size: 0.95rem;
-        }
-        .sobre-destaque {
-            background: var(--branco);
-            border-radius: var(--borda-radius);
-            padding: 2rem;
-            box-shadow: var(--sombra-suave);
-            border-left: 5px solid var(--dourado);
-        }
-        .sobre-destaque h3 {
-            color: var(--azul-primario);
-            margin-bottom: 0.8rem;
-            font-size: 1.3rem;
-        }
-        .valores-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.6rem;
-        }
-        .valor-tag {
-            background: rgba(26, 58, 92, 0.06);
-            color: var(--vermelho-claro);
-            padding: 0.5rem 1.2rem;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            border: 1px solid rgba(26, 58, 92, 0.15);
-        }
+
         /* ========== Por que votar em mim? ========== */
         .votar-em-mim {
             padding: 5rem 2rem;
@@ -503,19 +474,37 @@
         }
         
         .votar-em-mim-container {
-            border-style: solid;
-            border-width: 2px;
-            border-color: var(--dourado);
+            outline-style: solid;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            justify-items: center;
+            justify-content: center;
+            gap: 100px;
 
-            display: inline-block;
-            margin: 0 10%;
-
+            width: 1000px;
         }
 
-        .votar-em-mim-lista{
-            list-style-type: none;
-            color: var(--cinza-claro);
-        }
+        /* ========== Construa campanha comigo ========== */
+
+
+
+
+        /* ========== Contribua e fortaleça nossa campanha ========== */
+
+
+
+
+        /* ========== Vídeos do YouTube ========== */
+
+
+
+
+
+
+
+
+
 
         /* ========== PÁGINA DE PROPOSTAS ========== */
         .propostas-header {
