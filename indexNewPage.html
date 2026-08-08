@@ -4,37 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mandi Coelho - Pré-candidata Deputada Federal pelo PSTU 16 | Pré-Campanha 2026</title>
-    <link rel="stylesheet" href="./styleNew.css" >
+    <link rel="stylesheet" href="./styleNew2.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <!-- ==================== HEADER ==================== -->
-    <header class="header" id="header">
-            <div class="header-container">
-                <div class="logo-area" onclick="navegarPara('home')" title="Ir para página inicial">
-                    <div class="logo-icon">PSTU</div>
-                    <div class="logo-text">
-                        <small>Mandi Coelho</small>
-                        <small>Deputada Federal</small>
-                    </div>
-                </div>
+    <header class="header">
 
-                <button class="menu-toggle" id="menuToggle" aria-label="Menu" onclick="toggleMenu()">
-                    <span></span><span></span><span></span>
-                </button>
+        <div class="container">
 
-                <nav>
-                    <ul class="nav-links" id="navLinks">
-                        <li><a href="#" data-pagina="home" class="active" onclick="navegarPara('home')">Início</a></li>
-                        <li><a href="#" data-pagina="propostas" onclick="navegarPara('propostas')">Propostas</a></li>
-                        <li><a href="#" data-pagina="contato" class="btn-contato-nav" onclick="navegarPara('contato')">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <a href="#" class="logo">
+                COELHO MANDI
+            </a>
+
+            <nav class="menu">
+
+                <ul>
+
+                    <li><a href="#inicio">Início</a></li>
+
+                    <li><a href="#propostas">16 Pontos</a></li>
+
+                    <li><a href="#porque">Por que votar</a></li>
+
+                    <li><a href="#campanha">Campanha</a></li>
+
+                    <li><a href="#apoie">Contribua</a></li>
+
+                    <li><a href="#videos">Vídeos</a></li>
+
+                    <li><a href="#candidatos">Candidatos</a></li>
+
+                    <li><a href="#timeline">Linha do Tempo</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
     </header>
+    <main>
 
     <!-- ==================== PÁGINA PRINCIPAL (HOME) ==================== -->
-        <!-- Hero -->
+        <!-- Hero 
         <div class="hero">
             <div class="hero-container">
                 <div class="hero-content">
@@ -52,9 +65,43 @@
                         <img src="./img/Mandi.png">
                     </div>
             </div>
-        </div>
+        </div>-->
+         <section id="inicio" class="hero">
+                <div class="hero-background">
+                </div>
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <span class="subtitle">
+                        PSTU
+                    </span>
+                    <h1>
+                        FRASE PRINCIPAL
+                        DA CAMPANHA
+                    </h1>
+                    <div class="hero-text-container">
+                        <p>
+                            Parágrafo de apresentação.
+                            Parágrafo de apresentação.
+                            Parágrafo de apresentação.
+                        </p>
+                    </div>
+                        <!--
+                    <div class="hero-buttons">
+                        <a href="#propostas" class="btn">
+                            Conheça as propostas
+                        </a>
+                        <a href="#apoie" class="btn secondary">
+                            Apoiar campanha
+                        </a>
+                    </div>-->
+                </div>
+                <div class="hero-image">
+                    <img src="./img/Mandi.png" alt="Coelho Mandi">
+                </div>
+            </div>
+        </section>
 
-        <!-- ========== 16 pontos contra o sistema ========== -->
+        <!-- ========== 16 pontos contra o sistema ========== 
          <div class="sistema-pontos-container">
             <div class="pontos-container"> 
                 <div class="pontos-content">
@@ -96,9 +143,53 @@
                 </div>
 
             </div>
-         </div>
+         </div>-->
 
-        <!-- ========== Por que votar em mim? ========== -->
+        <section id="propostas" class="section propostas">
+            <div class="container">
+                <header class="section-header">
+                    <h2>
+                        16 Pontos Contra o Sistema
+                    </h2>
+                    <p>
+                        Conheça as principais propostas.
+                    </p>
+                </header>
+
+                <div class="cards">
+                    <article class="card">
+                        <span>01</span>
+                        <h3>Título</h3>
+                        <p>
+                            Texto da proposta.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span>02</span>
+                        <h3>Título</h3>
+                        <p>
+                            Texto da proposta.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span>03</span>
+                        <h3>Título</h3>
+                        <p>
+                            Texto da proposta.
+                        </p>
+                    </article>
+
+                    <!-- repetir até o 16 -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========== Por que votar em mim? ========== 
          <div class="votar-em-mim">
             <div class="votar-em-mim-container">
                 <h2>Por que votar em mim?</h2>
@@ -117,9 +208,53 @@
                     <li>111111111</li>
                 </ul>
             </div>
-         </div>
+         </div>-->
 
-        <!-- ========== Construa campanha comigo ========== -->
+        <section id="porque" class="section-votar-em-mim">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="title-header-votar-em-mim">
+                        Por que votar em mim?
+                    </h2>
+                </header>
+
+                <div class="motivos-container">
+                    <article>
+                        <h3>
+                            Motivo 1
+                        </h3>
+
+                        <p>
+                            Texto.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>
+                            Motivo 1
+                        </h3>
+
+                        <p>
+                            Texto.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>
+                            Motivo 1
+                        </h3>
+
+                        <p>
+                            Texto.
+                        </p>
+                    </article>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========== Construa campanha comigo ========== 
          <div>
             <div>
                 <h2>Construa campanha comigo</h2>
@@ -135,9 +270,66 @@
                     <h4>Redes sociais</h4>
                 </div>
             </div>
-         </div>
+         </div>-->
+        <section id="construa-campanha" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>
+                        Construa a campanha comigo
+                    </h2>
+                </header>
 
-        <!-- ========== Contribua e fortaleça nossa campanha ========== -->
+                <div class="construa-campanha">
+                    <div class="construa-campanha-form">
+                        <form>
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" required></textarea>
+
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+
+                    <div class="construa-campanha-redes">
+                        <h3>Divulgue</h3>
+                        <h4>Redes sociais</h4>
+                        <!-- Adicione links para redes sociais aqui -->
+                        <button class="btn"><i class="fab fa-facebook-f"></i> Facebook</button>
+                        <button class="btn"><i class="fab fa-twitter"></i> Twitter</button>
+                        <button class="btn"><i class="fab fa-instagram"></i> Instagram</button>
+
+                    </div>                
+            </div>
+
+            <div class="container">
+                <header class="section-header">
+                    <h2>
+                        Contribua e fortaleça nossa campanha
+                    </h2>
+                </header>
+
+                <div class="construa-campanha" style="border-style: solid">
+                    <div style="border-style: solid">
+                        <h3 style="border-style: solid">
+                            Nosso apoia-se:<span>aaaa</span> 
+                        </h3>
+                        <p>aaaaaaaa</p>
+                    </div>
+                    <div style="border-style: solid">
+                        <img src="./img/Mandi.png" alt="Coelho Mandi">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+         
+
+        <!-- ========== Contribua e fortaleça nossa campanha ========== 
         <div>
             <div>
                 <h2>Contribua e fortaleça nossa campanha</h2>
@@ -152,36 +344,146 @@
                     <img src="./img/Mandi.png">
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <!-- ========== Vídeos do YouTube ========== -->
-        <div>
-            <div>
-                <h2>Meu canal</h2>
-            </div>
-            <div>
+        <section id="videos" class="videos-section section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Vídeos</h2>
+                    <p>Destaques em vídeo</p>
+                </header>
+
+                <div class="videos-carousel">
+                    <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-slide">
+                            <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-slide">
+                            <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" aria-label="Próximo">›</button>
+                </div>
 
             </div>
-        </div>
-
+        </section>
         <!-- ========== Meus candidatos ========== -->
-        <div>
-            <div>
-                <h2>Meus candidatos </h2>
+        <section id="meus-candidatos" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>
+                        Meus candidatos
+                    </h2>
+                    <p>
+                        Todos os candidatos do PSTU que estão comigo nessa luta.
+                    </p>
+                </header>
+
+                <div class="cards">
+                    <article class="card">
+                        <span>01</span>
+                        <h3>Título</h3>
+                        <p>
+                            Texto da proposta.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span>02</span>
+                        <h3>Título</h3>
+                        <p>
+                            Texto da proposta.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span>03</span>
+                        <h3>Título</h3>
+                        <p>
+                            Texto da proposta.
+                        </p>
+                    </article>
+
+                    <!-- repetir até o 16 -->
+
+                </div>
+
             </div>
+
+        </section>
+
+        <!-- ========== Linha do tempo ========== -->
+        <!-- Sobre / Trajetória -->
+        <div id="timeline" class="sobre">
+            <header class="section-header">
+                <h2 class="title-header-timeline">
+                    Linha do tempo
+                </h2>
+            </header>
+
             <div>
                 
             </div>
+            
+            <div class="sobre-container">
+                <div class="sobre-texto">
+                    <h2>Quem é <span>Mandi Coelho</span></h2>
+                    <p>Texto.</p>
+                    <p>Texto</p>
+                    <div class="timeline-item">
+                        <span class="timeline-ano">2022</span>
+                        <span class="timeline-texto">Pré-candidata a Deputada Estadual de São Paulo.</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-ano">2024</span>
+                        <span class="timeline-texto">Pré-candidata a Vereadora de São Paulo</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-ano">2026</span>
+                        <span class="timeline-texto">Pré-candidata a Deputada Federal — por um mandato coletivo e participativo.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 
-        <!-- ========== Linha do tempo ========== -->
-            <div>
-            <div>
-                <h2>Linha do tempo </h2>
+        <!-- ========== Footer ========== -->
+         <section class="footer">
+            <div class="container">
+                <p>&copy; 2024 Mandi Coelho. Todos os direitos reservados.</p>
             </div>
-            <div>
-                <!--Carrossel ou sequencia de linha do tempo-->
-            </div>
-        </div>
-</body>
+         </section>
+    </main>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        const track = document.querySelector('.carousel-track');
+        const prev = document.querySelector('.carousel-btn.prev');
+        const next = document.querySelector('.carousel-btn.next');
+        if(!track) return;
+
+        const slideWidth = () => track.querySelector('.carousel-slide').getBoundingClientRect().width + parseFloat(getComputedStyle(track).gap || 0);
+
+        prev.addEventListener('click', ()=>{
+            track.scrollBy({left: -slideWidth(), behavior:'smooth'});
+        });
+        next.addEventListener('click', ()=>{
+            track.scrollBy({left: slideWidth(), behavior:'smooth'});
+        });
+
+        // Optional: make arrow keys control carousel
+        document.addEventListener('keydown', (e)=>{
+            if(e.key === 'ArrowLeft') prev.click();
+            if(e.key === 'ArrowRight') next.click();
+        });
+    });
+    </script>
+
+    </body>
 </html>
