@@ -29,7 +29,7 @@
 
                     <li><a href="#campanha">Campanha</a></li>
 
-                    <li><a href="#apoie">Contribua</a></li>
+                    <li><a href="#contribua">Contribua</a></li>
 
                     <li><a href="#videos">Vídeos</a></li>
 
@@ -271,17 +271,20 @@
                 </div>
             </div>
          </div>-->
-        <section id="construa-campanha" class="section">
+        <section id="campanha" class="section">
             <div class="container">
                 <header class="section-header">
                     <h2>
                         Construa a campanha comigo
                     </h2>
+                    <h3>
+                        Preencha o formulário abaixo para entrar em contato e contribuir com a campanha.
+                    </h3>
                 </header>
 
                 <div class="construa-campanha">
                     <div class="construa-campanha-form">
-                        <form>
+                        <form id="contato-form">
                             <label for="nome">Nome:</label>
                             <input type="text" id="nome" name="nome" required>
 
@@ -306,45 +309,71 @@
                     </div>                
             </div>
 
+            
+
+        </section>
+         
+
+        <!-- ========== Contribua e fortaleça nossa campanha ==========  -->
+        <section id="contribua" class="section fortalece-campanha-section">
             <div class="container">
                 <header class="section-header">
                     <h2>
                         Contribua e fortaleça nossa campanha
                     </h2>
+                    <p>Cada apoio faz a diferença para construirmos uma sociedade mais justa e igualitária.</p>
                 </header>
 
-                <div class="construa-campanha" style="border-style: solid">
-                    <div style="border-style: solid">
-                        <h3 style="border-style: solid">
-                            Nosso apoia-se:<span>aaaa</span> 
-                        </h3>
-                        <p>aaaaaaaa</p>
-                    </div>
-                    <div style="border-style: solid">
-                        <img src="./img/Mandi.png" alt="Coelho Mandi">
-                    </div>
+                <div class="fortalece-campanha-grid">
+                    <article class="fortalece-card fortalece-card-left">
+                        <div class="card-top">
+                            <div class="card-icon card-icon-primary">
+                                <i class="fa-solid fa-hands-holding-heart"></i>
+                            </div>
+                            <div>
+                                <h3>Nosso apoia-se</h3>
+                                <span class="card-divider"></span>
+                            </div>
+                        </div>
+                        <p>Apoiar esta campanha é investir em mudanças reais. Juntos, podemos transformar ideias em ações e construir um futuro melhor para todos.</p>
+                        <div class="quote-card">
+                            <p class="quote-text">“Acredito em uma política feita com as pessoas, para as pessoas e pelas pessoas. Vamos juntos nessa caminhada!”</p>
+                            <div class="quote-meta">
+                                <strong>Nosso apoia-se: aaaa</strong>
+                                <span>Apoiador da campanha</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="fortalece-card fortalece-card-image">
+                        <img src="./img/Mandi.png" alt="Mandi Coelho">
+                    </article>
+
+                    <article class="fortalece-card fortalece-card-right">
+                        <div class="card-top">
+                            <div class="card-icon card-icon-secondary">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </div>
+                            <div>
+                                <h3>Por que apoiar?</h3>
+                                <span class="card-divider"></span>
+                            </div>
+                        </div>
+                        <p>Seu apoio ajuda a ampliar nossa voz, levar nossas propostas adiante e fortalecer a participação popular.</p>
+                        <div class="action-list">
+                            <button class="action-item"><span class="action-icon"><i class="fa-solid fa-heart"></i></span><span>Faça uma doação</span><i class="fa-solid fa-chevron-right"></i></button>
+                            <button class="action-item"><span class="action-icon"><i class="fa-solid fa-share-nodes"></i></span><span>Compartilhe</span><i class="fa-solid fa-chevron-right"></i></button>
+                            <button class="action-item"><span class="action-icon"><i class="fa-solid fa-user-group"></i></span><span>Seja voluntário</span><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="support-banner">
+                    <span class="banner-icon"><i class="fa-solid fa-heart"></i></span>
+                    <p>A mudança começa com você. <strong>Apóie e faça parte dessa transformação!</strong></p>
                 </div>
             </div>
-
         </section>
-         
-
-        <!-- ========== Contribua e fortaleça nossa campanha ========== 
-        <div>
-            <div>
-                <h2>Contribua e fortaleça nossa campanha</h2>
-            </div>
-            <div>
-                <div>
-                    <h3>Nosso apoia-se:<span>aaaa</span> </h3>
-                    <p>aaaaaaaa</p>
-                </div>
-
-                <div>
-                    <img src="./img/Mandi.png">
-                </div>
-            </div>
-        </div>-->
 
         <!-- ========== Vídeos do YouTube ========== -->
         <section id="videos" class="videos-section section">
@@ -373,7 +402,7 @@
             </div>
         </section>
         <!-- ========== Meus candidatos ========== -->
-        <section id="meus-candidatos" class="section">
+        <section id="candidatos" class="section">
             <div class="container">
                 <header class="section-header">
                     <h2>
@@ -418,39 +447,64 @@
         </section>
 
         <!-- ========== Linha do tempo ========== -->
-        <!-- Sobre / Trajetória -->
-        <div id="timeline" class="sobre">
-            <header class="section-header">
-                <h2 class="title-header-timeline">
-                    Linha do tempo
-                </h2>
-            </header>
+        <section id="timeline" class="timeline-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Linha do tempo</h2>
+                    <p>Uma caminhada construída com diálogo, participação e compromisso com a transformação social.</p>
+                </header>
 
-            <div>
-                
-            </div>
-            
-            <div class="sobre-container">
-                <div class="sobre-texto">
-                    <h2>Quem é <span>Mandi Coelho</span></h2>
-                    <p>Texto.</p>
-                    <p>Texto</p>
-                    <div class="timeline-item">
-                        <span class="timeline-ano">2022</span>
-                        <span class="timeline-texto">Pré-candidata a Deputada Estadual de São Paulo.</span>
+                <div class="timeline-grid">
+                    <div class="timeline-intro">
+                        <span class="timeline-badge">Trajetória</span>
+                        <h2>Quem é <span>Mandi Coelho</span></h2>
+                        <p>Conheça os principais marcos da minha trajetória na luta por uma sociedade mais justa e participativa.</p>
+                        <div class="timeline-highlight">
+                            <span class="highlight-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                            <p>Cada passo dessa jornada reforça nosso compromisso com um futuro melhor para todos.</p>
+                        </div>
                     </div>
-                    <div class="timeline-item">
-                        <span class="timeline-ano">2024</span>
-                        <span class="timeline-texto">Pré-candidata a Vereadora de São Paulo</span>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="timeline-ano">2026</span>
-                        <span class="timeline-texto">Pré-candidata a Deputada Federal — por um mandato coletivo e participativo.</span>
+
+                    <div class="timeline-panel">
+                        <div class="timeline-panel-header">
+                            <span class="panel-icon"><i class="fa-solid fa-user"></i></span>
+                            <div>
+                                <h3>Quem é Mandi Coelho</h3>
+                                <p>Conheça os principais marcos da minha trajetória na luta por uma sociedade mais justa e participativa.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step">
+                            <span class="timeline-year">2022</span> <span class="timeline-icon"><i class="fa-solid fa-chevron-right"></i></span>
+                            <div class="timeline-copy">
+                                <h4>Pré-candidata a Deputada Estadual de São Paulo</h4>
+                                <p>Primeiro passo na construção de um projeto coletivo e popular para transformar realidades.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step">
+                            <span class="timeline-year">2024</span> <span class="timeline-icon"><i class="fa-solid fa-chevron-right"></i></span>
+                            <div class="timeline-copy">
+                                <h4>Pré-candidata a Vereadora de São Paulo</h4>
+                                <p>Seguindo firme na defesa dos direitos da população e na construção de políticas públicas efetivas.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step">
+                            <span class="timeline-year">2026</span> <span class="timeline-icon"><i class="fa-solid fa-chevron-right"></i></span>
+                            <div class="timeline-copy">
+                                <h4>Pré-candidata a Deputada Federal</h4>
+                                <p>Por um mandato coletivo e participativo, colocado a serviço do povo e das lutas populares.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-quote-footer">
+                            Nossa história é feita de lutas, conquistas e, acima de tudo, de esperança em um amanhã mais digno para todos.
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
+        </section>
 
         <!-- ========== Footer ========== -->
          <section class="footer">
@@ -462,26 +516,68 @@
     </main>
 
     <script>
-    document.addEventListener('DOMContentLoaded', function(){
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('#contato-form');
+        if (form) {
+            form.addEventListener('submit', async (event) => {
+                event.preventDefault();
+                const data = new FormData(form);
+                const body = Object.fromEntries(data.entries());
+
+                try {
+                    const res = await fetch('http://localhost:3000/send-email', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(body),
+                    });
+
+                    if (!res.ok) {
+                        const error = await res.json().catch(() => null);
+                        const message = error?.error || 'Falha ao enviar o formulário. Tente novamente.';
+                        alert(message);
+                        return;
+                    }
+
+                    alert('Mensagem enviada com sucesso!');
+                    form.reset();
+                } catch (error) {
+                    console.error('Erro ao enviar formulário:', error);
+                    alert('Não foi possível enviar a mensagem. Verifique se o servidor está rodando.');
+                }
+            });
+        }
+
         const track = document.querySelector('.carousel-track');
         const prev = document.querySelector('.carousel-btn.prev');
         const next = document.querySelector('.carousel-btn.next');
         if(!track) return;
 
-        const slideWidth = () => track.querySelector('.carousel-slide').getBoundingClientRect().width + parseFloat(getComputedStyle(track).gap || 0);
+        const slides = Array.from(track.querySelectorAll('.carousel-slide'));
+        let currentIndex = 0;
 
-        prev.addEventListener('click', ()=>{
-            track.scrollBy({left: -slideWidth(), behavior:'smooth'});
+        const centerSlide = (index) => {
+            currentIndex = Math.max(0, Math.min(index, slides.length - 1));
+            slides.forEach((slide, i) => slide.classList.toggle('active', i === currentIndex));
+
+            const currentSlide = slides[currentIndex];
+            currentSlide.scrollIntoView({behavior: 'smooth', inline: 'center', block: 'nearest'});
+        };
+
+        prev.addEventListener('click', () => {
+            centerSlide(currentIndex - 1);
         });
-        next.addEventListener('click', ()=>{
-            track.scrollBy({left: slideWidth(), behavior:'smooth'});
+
+        next.addEventListener('click', () => {
+            centerSlide(currentIndex + 1);
         });
 
         // Optional: make arrow keys control carousel
-        document.addEventListener('keydown', (e)=>{
+        document.addEventListener('keydown', (e) => {
             if(e.key === 'ArrowLeft') prev.click();
             if(e.key === 'ArrowRight') next.click();
         });
+
+        centerSlide(currentIndex);
     });
     </script>
 
