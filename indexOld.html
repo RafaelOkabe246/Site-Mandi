@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandi Coelho - Pré-candidata Deputada Federal 16 | Pré-Campanha 2026</title>
+    <link rel="stylesheet" href="./style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <div class="logo-area" onclick="navegarPara('home')" title="Ir para página inicial">
+                <div class="logo-icon">PSTU</div>
+                <div class="logo-text">
+                    <small>Mandi Coelho</small>
+                    <small>Deputada Federal</small>
+                </div>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#" data-pagina="home" class="active" onclick="navegarPara('home')">Início</a></li>
+                    <li><a href="#" data-pagina="propostas" onclick="navegarPara('propostas')">Propostas</a></li>
+                    <li><a href="#" data-pagina="contato" class="btn-contato-nav" onclick="navegarPara('contato')">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== PÁGINA PRINCIPAL (HOME) ==================== -->
+    <section class="page-section active-section" id="pagina-home">
+        <!-- Hero -->
+        <div class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h4>Pré-Campanha 2026</h4>
+                    <h1>Uma voz <span>corajosa</span> por um Brasil mais justo</h1>
+                    <div class="numero-campanha">
+                        <span>16</span>
+                    </div>
+                    <p>Compromisso real com as pessoas. Luto por saúde pública de qualidade, educação transformadora e igualdade de oportunidades para todos os brasileiros.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-dourado" onclick="navegarPara('propostas')">📋 Ver Propostas</button>
+                        <button class="btn btn-dourado" onclick="navegarPara('contato')">✉️ Fale Comigo</button>
+                    </div>
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="rede-social-link">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="rede-social-link">
+                        <i class="fab fa-x-twitter"></i>
+                        <span>X / Twitter</span>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="rede-social-link">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="rede-social-link">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-placeholder">
+                        <span class="silhueta"> <img src="./img/Mandi.png"> </span>
+                        <span class="foto-label"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Por que votar em mim?-->
+        <div class="votar-em-mim">
+            <div class="votar-em-mim-container">
+                <span> <img src="./img/Mandi.png"> </span>
+            </div>
+            <div class="votar-em-mim-container">
+                <h2>Por que votar em mim?</h2>
+                <ul class="votar-em-mim-lista">
+                    <li>Campanha sem financiamento de lobbies ou interesses de grupos especiais que há anos exploram os trabalhadores.</li>
+                    <li>Alternativa de esquerda ao PT.</li>
+                    <li>Diminuição do imposto sobre consumo.</li>
+                    <li>Redução da jornada de trabalho para 36 horas semanas.</li>
+                    <li>Aumento do salário mínimo.</li>
+                    <li>Obrigar todo deputado a receber o salário de uma professora.</li>
+                    <li>Cortar as emendas parlamentares de R$x milhões para R$y milhões.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sobre / Trajetória -->
+        <div class="sobre">
+            <div class="sobre-container">
+                <div class="sobre-texto">
+                    <h2>Quem é <span>Mandi Coelho</span></h2>
+                    <p>Texto.</p>
+                    <p>Texto</p>
+                    <div class="timeline-item">
+                        <span class="timeline-ano">2022</span>
+                        <span class="timeline-texto">Pré-candidata a Deputada Estadual de São Paulo.</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-ano">2024</span>
+                        <span class="timeline-texto">Pré-candidata a Vereadora de São Paulo</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-ano">2026</span>
+                        <span class="timeline-texto">Pré-candidata a Deputada Federal — por um mandato coletivo e participativo.</span>
+                    </div>
+                </div>
+                <div class="sobre-destaque">
+                    <h3>🌟 Pautas</h3>
+                    <div class="valores-tags">
+                        <span class="valor-tag">🤝 Transparência</span>
+                        <span class="valor-tag">💪 Igualdade</span>
+                        <span class="valor-tag">🌱 Sustentabilidade</span>
+                        <span class="valor-tag">🏥 Saúde Pública</span>
+                        <span class="valor-tag">📚 Educação</span>
+                        <span class="valor-tag">👩‍👩‍👧 Direitos Humanos</span>
+                        <span class="valor-tag">🏘️ Moradia Digna</span>
+                        <span class="valor-tag">⚖️ Justiça Social</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PÁGINA DE PROPOSTAS ==================== -->
+    <section class="page-section" id="pagina-propostas">
+        <div class="propostas-header">
+            <h2>Nossas <span>Propostas</span></h2>
+            <p>Compromissos reais, construídos com a participação popular. Conheça as principais bandeiras do nosso mandato.</p>
+        </div>
+        <div class="propostas-grid">
+            <div class="proposta-card">
+                <span class="proposta-icon">🏥</span>
+                <h3>Saúde Pública Fortalecida</h3>
+                <p>Defendo o aumento do repasse federal para a atenção básica, a valorização dos profissionais do SUS e a redução das filas de exames e cirurgias eletivas. Saúde é prioridade absoluta.</p>
+            </div>
+            <div class="proposta-card">
+                <span class="proposta-icon">📚</span>
+                <h3>Educação Transformadora</h3>
+                <p>Proponho a ampliação das escolas em tempo integral, a valorização salarial dos professores e o investimento em tecnologia nas salas de aula, reduzindo a evasão escolar.</p>
+            </div>
+            <div class="proposta-card">
+                <span class="proposta-icon">👩‍👩‍👧</span>
+                <h3>Proteção às Mulheres</h3>
+                <p>Criação de uma rede nacional integrada de acolhimento às vítimas de violência doméstica, com casas-abrigo, apoio psicológico e capacitação profissional para autonomia financeira.</p>
+            </div>
+            <div class="proposta-card">
+                <span class="proposta-icon">🏘️</span>
+                <h3>Moradia Digna</h3>
+                <p>Programa federal de habitação popular com subsídio real para famílias de baixa renda, urbanização de favelas e regularização fundiária em todo o país.</p>
+            </div>
+            <div class="proposta-card">
+                <span class="proposta-icon">🌱</span>
+                <h3>Meio Ambiente</h3>
+                <p>Fiscalização rigorosa contra o desmatamento ilegal, incentivos à energia limpa e economia verde, além de educação ambiental nas escolas públicas.</p>
+            </div>
+            <div class="proposta-card">
+                <span class="proposta-icon">💼</span>
+                <h3>Emprego e Renda</h3>
+                <p>Apoio ao microempreendedor com linhas de crédito facilitadas, incentivo às startups sociais e programas de primeiro emprego para jovens de comunidades periféricas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PÁGINA DE CONTATO ==================== -->
+    <section class="page-section" id="pagina-contato">
+        <div class="contato-section">
+            <div class="contato-info">
+                <h2>Fale com a <span>Ana</span></h2>
+                <p>Sua opinião é fundamental para construirmos juntos um mandato participativo. Envie sua mensagem, sugestão ou crítica. Será um prazer ouvir você!</p>
+                <div class="contato-item">
+                    <div class="contato-icon-circle">📧</div>
+                    <span>contato@anaoliveira4045.com.br</span>
+                </div>
+                <div class="contato-item">
+                    <div class="contato-icon-circle">📞</div>
+                    <span>(31) 9 9999-4045 — WhatsApp</span>
+                </div>
+                <div class="contato-item">
+                    <div class="contato-icon-circle">📍</div>
+                    <span>Belo Horizonte — MG | Brasília — DF</span>
+                </div>
+
+            </div>
+            <div class="form-card">
+                <h3>Envie sua mensagem</h3>
+                <form id="formContato" onsubmit="enviarContato(event)">
+                    <div class="form-group">
+                        <label for="nome">Nome completo *</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cidade">Cidade / Estado</label>
+                        <input type="text" id="cidade" name="cidade" placeholder="Ex: Belo Horizonte - MG">
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto *</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="proposta">Sugestão de Proposta</option>
+                            <option value="voluntariado">Quero ser voluntário(a)</option>
+                            <option value="imprensa">Assessoria de Imprensa</option>
+                            <option value="evento">Convite para Evento</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">📨 Enviar Mensagem</button>
+                </form>
+                <div class="form-feedback" id="formFeedback"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <p><strong>Ana Oliveira — Pré-Candidata a Deputada Federal | Número 4045</strong></p>
+        <p>Juntos por um Brasil mais justo, inclusivo e sustentável. 🌟</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.7;">
+            © 2026 — Todos os direitos reservados. | CNPJ fictício para demonstração.
+        </p>
+    </footer>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script src="./code.js" ></script>
+</body>
+</html>
