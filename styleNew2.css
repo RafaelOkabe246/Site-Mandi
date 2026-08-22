@@ -1,7 +1,5 @@
 :root{
 
-    --primary:#d11d1d;
-    --primary-dark:#9c1414;
 
     --white:#ffffff;
 
@@ -40,8 +38,8 @@ html, main, body{
 body{
 
     font-family:Arial, Helvetica, sans-serif;
-    background:#f6f6f6;
-    color:#222;
+    background:var(--light-gray);
+    color:var(--black);
     line-height:1.6;
 
 }
@@ -78,7 +76,7 @@ ul{
 
     z-index:999;
 
-    background:white;
+    background:var(--white);
 
     box-shadow:0 5px 20px rgba(0,0,0,.05);
 
@@ -102,7 +100,7 @@ ul{
 
     font-weight:bold;
 
-    color:var(--primary);
+    color:var(--red);
 
 }
 
@@ -122,7 +120,7 @@ ul{
 
 .menu a:hover{
 
-    color:var(--primary);
+    color:var(--red);
 
 }
 
@@ -139,15 +137,15 @@ ul{
 
     padding:80px 0;
 
-    background:#f7f7f9;
+    background:var(--light-gray);
 
 }
 
-.hero-grid{
+.hero-flex{
 
-    display:grid;
+    display: flex;
 
-    grid-template-columns:1fr 1fr;
+    /*grid-template-columns:1fr 1fr;*/
 
     gap:80px;
 
@@ -188,9 +186,9 @@ ul{
     display:inline-flex;
 
     width:fit-content;
-    background:var(--primary);
+    background:var(--red);
 
-    color:white;
+    color:var(--white);
 
     padding:12px 24px;
 
@@ -208,6 +206,8 @@ ul{
 
 .hero-text-container p{
 
+    flex: 1;
+
     font-size:1.1rem;
 
     line-height:1.9;
@@ -218,7 +218,7 @@ ul{
 
     margin:0;
 
-    background:rgba(255,255,255,0.92);
+    background:var(--light-gray);
 
     padding:24px 28px;
 
@@ -240,9 +240,8 @@ ul{
 
 .hero-image{
 
-    display:flex;
-
-    justify-content:center;
+    flex: 1;
+    justify-content:right;
 
     align-items:flex-end;
 
@@ -270,7 +269,7 @@ ul{
     max-width:1600px;
     transform:translateX(-50%);
     height:40%;
-    background: var(--primary);
+    background: var(--red);
     opacity:.18;
     z-index:-1;
     border-radius: 40px 40px 0 0;
@@ -289,7 +288,7 @@ ul{
 
 .card{
 
-    background:white;
+    background:var(--light-gray);
 
     border-radius:var(--radius);
 
@@ -311,7 +310,8 @@ ul{
 
     display:inline-flex;
 
-    width:50px;
+    min-width:50px;
+    max-width: 200px;
 
     height:50px;
 
@@ -319,11 +319,12 @@ ul{
 
     align-items:center;
 
-    border-radius:50%;
+    border-radius:10%;
+    padding: 0 10px;
 
-    background:var(--primary);
+    background:var(--red);
 
-    color:white;
+    color:var(--white);
 
     font-weight:bold;
 
@@ -350,7 +351,7 @@ ul{
 
     border-radius:999px;
 
-    background:var(--primary);
+    background:var(--purple);
 
     color:white;
 
@@ -364,7 +365,7 @@ ul{
 
     transform:translateY(-4px);
 
-    background:var(--primary-dark);
+    background:var(--red);
 
 }
 
@@ -372,9 +373,9 @@ ul{
 
     background:transparent;
 
-    color:var(--primary);
+    color:var(--red);
 
-    border:2px solid var(--primary);
+    border:2px solid var(--red);
 
 }
 
@@ -386,7 +387,7 @@ ul{
 }
 
 .motivos-container article{
-    background:var(--primary);
+    background:var(--red);
     color:var(--white);
     padding:20px;
     border-radius:50px 50px;
@@ -409,7 +410,7 @@ ul{
 
 .construa-campanha-form,
 .construa-campanha-redes{
-    background:#ffffff;
+    background:var(--light-gray);
     border-radius:24px;
     box-shadow:0 20px 50px rgba(0,0,0,.08);
     padding:32px;
@@ -423,14 +424,14 @@ ul{
 }
 
 .construa-campanha-form h3{
-    color:var(--primary);
+    color:var(--red);
     font-size:1.3rem;
     margin-bottom:0.5rem;
 }
 
 .construa-campanha-form label{
     display:block;
-    color:#333;
+    color:var(--black);
     margin-bottom:8px;
     font-weight:600;
 }
@@ -441,9 +442,9 @@ ul{
     width:100%;
     padding:15px 18px;
     border-radius:18px;
-    border:1px solid #ddd;
-    background:#fdfdfd;
-    color:#333;
+    border:1px solid var(--light-gray);
+    background:var(--light-gray);
+    color:var(--black);
     font-size:1rem;
 }
 
@@ -457,8 +458,8 @@ ul{
     padding:18px;
     border-radius:999px;
     border:0;
-    background:var(--primary);
-    color:white;
+    background:var(--red);
+    color:var(--white);
     font-size:1rem;
     font-weight:700;
     cursor:pointer;
@@ -467,7 +468,7 @@ ul{
 
 .construa-campanha-form button:hover{
     transform:translateY(-2px);
-    background:var(--primary-dark);
+    background:var(--red);
 }
 
 .construa-campanha-redes{
@@ -482,12 +483,12 @@ ul{
 }
 
 .construa-campanha-redes h3{
-    color:var(--primary);
+    color:var(--red);
     font-size:1.35rem;
 }
 
 .construa-campanha-redes h4{
-    color:#333;
+    color:var(--black);
     font-size:1rem;
     margin-bottom:8px;
 }
@@ -512,7 +513,7 @@ ul{
 }
 
 .construa-campanha-redes p{
-    color:#555;
+    color:var(--light-gray);
     line-height:1.75;
     margin:0;
 }
@@ -548,7 +549,7 @@ ul{
 .fortalece-campanha-section .section-header p{
     max-width:700px;
     margin:0 auto 3rem auto;
-    color:#444;
+    color:var(--light-gray);
     font-size:1.05rem;
 }
 
@@ -561,7 +562,7 @@ ul{
 }
 
 .fortalece-card{
-    background:white;
+    background:var(--white);
     border-radius:28px;
     box-shadow:0 30px 80px rgba(0,0,0,.08);
     padding:32px;
@@ -603,17 +604,17 @@ ul{
     align-items:center;
     justify-content:center;
     border-radius:50%;
-    color:white;
+    color:var(--white);
     font-size:1.2rem;
     flex-shrink:0;
 }
 
 .card-icon-primary{
-    background:var(--primary);
+    background:var(--red);
 }
 
 .card-icon-secondary{
-    background:#222;
+    background:var(--red-dark);
 }
 
 .card-top h3{
@@ -626,13 +627,13 @@ ul{
     display:block;
     width:50px;
     height:4px;
-    background:var(--primary);
+    background:var(--red);
     margin-top:8px;
     border-radius:999px;
 }
 
 .fortalece-card p{
-    color:#444;
+    color:var(--light-gray);
     line-height:1.8;
     margin:0;
 }
@@ -646,18 +647,18 @@ ul{
 .quote-text{
     margin:0 0 18px 0;
     font-style:italic;
-    color:#333;
+    color:var(--black);
     line-height:1.8;
 }
 
 .quote-meta strong{
     display:block;
-    color:var(--primary);
+    color:var(--red);
     margin-bottom:4px;
 }
 
 .quote-meta span{
-    color:#666;
+    color:var(--light-gray);
     font-size:0.95rem;
 }
 
@@ -675,9 +676,9 @@ ul{
     width:100%;
     padding:18px 20px;
     border-radius:18px;
-    border:1px solid #eee;
-    background:#fafafa;
-    color:#222;
+    border:1px solid var(--light-gray);
+    background:var(--light-gray);
+    color:var(--black);
     font-weight:700;
     cursor:pointer;
     transition:transform .2s ease, border-color .2s ease, background .2s ease;
@@ -686,7 +687,7 @@ ul{
 .action-item:hover{
     transform:translateY(-2px);
     border-color:rgba(209,29,29,.4);
-    background:#fff;
+    background:var(--white);
 }
 
 .action-icon{
@@ -696,8 +697,8 @@ ul{
     align-items:center;
     justify-content:center;
     border-radius:14px;
-    background:var(--primary);
-    color:white;
+    background:var(--red);
+    color:var(--white);
     flex-shrink:0;
 }
 
@@ -706,8 +707,8 @@ ul{
     gap:16px;
     align-items:center;
     justify-content:center;
-    background:var(--primary);
-    color:white;
+    background:var(--red);
+    color:var(--white);
     border-radius:28px;
     padding:22px 28px;
     text-align:center;
@@ -721,7 +722,7 @@ ul{
     justify-content:center;
     border-radius:50%;
     background:rgba(255,255,255,.18);
-    color:white;
+    color:var(--white);
     flex-shrink:0;
 }
 
@@ -732,7 +733,7 @@ ul{
 }
 
 .support-banner strong{
-    color:#fff;
+    color:var(--white);
 }
 
 @media (max-width: 1100px){
@@ -779,7 +780,7 @@ ul{
 }
 
 .timeline-section .section-header h2{
-    color: #ffffff;
+    color: var(--white);
     font-size: clamp(3.2rem, 4vw, 4.6rem);
     margin-bottom: 1rem;
     line-height: 1;
@@ -805,7 +806,7 @@ ul{
     display:flex;
     flex-direction:column;
     gap: 1.8rem;
-    color: #fff;
+    color: var(--white);
 }
 
 .timeline-badge{
@@ -815,8 +816,8 @@ ul{
     width:max-content;
     padding: 0.65rem 1.2rem;
     border-radius:999px;
-    background: var(--primary);
-    color: #fff;
+    background: var(--red);
+    color: var(--white);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -831,7 +832,7 @@ ul{
 
 .timeline-intro h2 span{
     display:block;
-    color: #d11d1d;
+    color: var(--red);
 }
 
 .timeline-intro p{
@@ -859,7 +860,7 @@ ul{
     justify-content:center;
     border-radius: 18px;
     background: rgba(209,29,29,.18);
-    color: #fff;
+    color: var(--white);
     font-size: 1.3rem;
 }
 
@@ -903,7 +904,7 @@ ul{
     justify-content:center;
     border-radius: 50%;
     background: rgba(255,255,255,.2);
-    color: white;
+    color: var(--white);
     font-size: 1.2rem;
     flex-shrink: 0;
 }
@@ -911,7 +912,7 @@ ul{
 .timeline-panel-header h3{
     margin: 0 0 0.45rem;
     font-size: 1.4rem;
-    color: #fff;
+    color: var(--white);
 }
 
 .timeline-panel-header p{
@@ -955,7 +956,7 @@ ul{
     justify-content:center;
     border-radius: 50%;
     background: rgba(255,255,255,.2);
-    color: white;
+    color: var(--white);
     font-size: 1.1rem;
     transition: transform .25s ease;
 }
@@ -973,8 +974,8 @@ ul{
     min-height: 44px;
     padding: 0 1rem;
     border-radius: 999px;
-    background: var(--primary);
-    color: #fff;
+    background: var(--red);
+    color: var(--white);
     font-weight: 800;
     letter-spacing: 0.01em;
     z-index: 2;
@@ -997,7 +998,7 @@ ul{
 .timeline-copy h4{
     margin: 0 0 0.4rem;
     font-size: 1rem;
-    color: #ff5252;
+    color: var(--red);
 }
 
 .timeline-copy p{
@@ -1123,7 +1124,7 @@ ul{
 }
 .carousel-btn{
     background:var(--primary);
-    color:white;
+    color:var(--black);
     border:0;
     width:44px;
     height:44px;
@@ -1248,7 +1249,7 @@ ul{
     border-radius:5px 50px 50px 0px;
     width:max-content;
 
-    color: var(--primary);
+    color: var(--red);
     background: black;
 
     padding: 10px 20px;
