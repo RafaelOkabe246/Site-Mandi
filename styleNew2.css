@@ -102,6 +102,7 @@ ul{
 
     color:var(--red);
 
+    margin-right: 10px;
 }
 
 .menu ul{
@@ -112,10 +113,12 @@ ul{
 
 }
 
+.menu li{
+
+}
+
 .menu a{
-
     transition:.25s;
-
 }
 
 .menu a:hover{
@@ -169,7 +172,7 @@ ul{
 
 .hero-text h1{
 
-    font-size:clamp(3rem,5vw,5rem);
+    font-size:clamp(2rem,4vw,4rem);
 
     line-height:1.02;
 
@@ -393,13 +396,19 @@ ul{
     border-radius:50px 50px;
 }
 .section-votar-em-mim{
+    /*
     background-image: url('./img/Mandi.png');
     background-size: cover;
-
+    background-attachment:scroll;*/
+    background-color: var(--purple);
     padding-bottom: 20px;
 }
 
 /* ============ Construa campanha comigo ============ */
+.section .construa-campanha-section{
+    background: var(--purple);
+}
+
 .construa-campanha{
     display:flex;
     gap:30px;
@@ -542,6 +551,10 @@ ul{
 }
 
 /* ============ Fortalece campanha section ============ */
+.fortalece-campanha-section{
+        background:var(--red);
+}
+
 .fortalece-campanha-section .section-header h2{
     margin-bottom:0.5rem;
 }
@@ -562,7 +575,7 @@ ul{
 }
 
 .fortalece-card{
-    background:var(--white);
+    background:var(--purple);
     border-radius:28px;
     box-shadow:0 30px 80px rgba(0,0,0,.08);
     padding:32px;
@@ -653,7 +666,7 @@ ul{
 
 .quote-meta strong{
     display:block;
-    color:var(--red);
+    color:var(--light-gray);
     margin-bottom:4px;
 }
 
@@ -1214,12 +1227,11 @@ ul{
     font-size:3rem;
 
     margin-bottom:15px;
-
 }
 
 .section-header p{
 
-    color:#666;
+    color:var(--black);
 
     max-width:700px;
 
