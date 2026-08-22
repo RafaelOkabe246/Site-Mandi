@@ -65,6 +65,55 @@ ul{
 }
 
 /*Header*/
+
+/**/
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+/**/
+
+
+
+
+
 .header{
 
     position:fixed;
@@ -110,10 +159,6 @@ ul{
     display:flex;
 
     gap:40px;
-
-}
-
-.menu li{
 
 }
 
@@ -172,7 +217,7 @@ ul{
 
 .hero-text h1{
 
-    font-size:clamp(2rem,4vw,4rem);
+    font-size:clamp(1.2rem,2.5vw,2.5rem);
 
     line-height:1.02;
 
@@ -181,6 +226,10 @@ ul{
     max-width:700px;
 
     letter-spacing:-0.04em;
+
+    color: var(--red);
+
+    text-transform:uppercase;
 
 }
 
@@ -200,6 +249,28 @@ ul{
     letter-spacing:1px;
 
     font-size:.95rem;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+}
+
+.subtitle2{
+display:inline-flex;
+
+    width:fit-content;
+    background:var(--red);
+
+    color:var(--white);
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    letter-spacing:1px;
+
+    font-size:1.25rem;
 
     font-weight:700;
 
@@ -272,13 +343,25 @@ ul{
     max-width:1600px;
     transform:translateX(-50%);
     height:40%;
-    background: var(--red);
-    opacity:.18;
-    z-index:-1;
-    border-radius: 40px 40px 0 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    z-index:0;
+    border-radius:40px 40px 0 0;
 }
 
-/*=========== Cards ============*/
+.hero-background img{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+    margin:auto;
+}
+
+/*=========== 20 pontos contra o sistema ============*/
+
+
 .cards{
 
     display:grid;
@@ -290,17 +373,17 @@ ul{
 }
 
 .card{
-
-    background:var(--light-gray);
-
     border-radius:var(--radius);
-
     padding:35px;
-
     box-shadow:var(--shadow);
-
     transition:.3s;
-
+}
+.card-purple{
+    background:var(--purple);
+    border-radius:var(--radius);
+    padding:35px;
+    box-shadow:var(--shadow);
+    transition:.3s;
 }
 
 .card:hover{
@@ -339,6 +422,10 @@ ul{
 
     margin-bottom:15px;
 
+}
+
+.card p{
+    
 }
 
 /*Botões*/
@@ -390,23 +477,44 @@ ul{
 }
 
 .motivos-container article{
-    background:var(--red);
+    background:var(--blue);
     color:var(--white);
     padding:20px;
     border-radius:50px 50px;
+}
+.motivos-container p{
+    color: var(--black);
+}
+.motivos-container h3{
+    color: var(--black);
 }
 .section-votar-em-mim{
     /*
     background-image: url('./img/Mandi.png');
     background-size: cover;
     background-attachment:scroll;*/
-    background-color: var(--purple);
+    background-color: var(--red);
     padding-bottom: 20px;
 }
 
 /* ============ Construa campanha comigo ============ */
-.section .construa-campanha-section{
+.section-construa-campanha-section{
     background: var(--purple);
+}
+
+.section-construa-campanha-section .section-header h2{
+    background: var(--black);
+    color: var(--white);
+    border-radius:50px 50px;
+    width: fit-content;
+    padding: 10px 20px;
+    justify-self: center;
+}
+.section-construa-campanha-section .section-header h3{
+    color: var(--white);
+}
+.section-construa-campanha-section .section-header p{
+    color: var(--white);
 }
 
 .construa-campanha{
@@ -556,7 +664,13 @@ ul{
 }
 
 .fortalece-campanha-section .section-header h2{
-    margin-bottom:0.5rem;
+    border-radius:40px 40px;
+    width: fit-content;
+    padding: 10px 20px;
+    justify-self: center;
+    
+    color: var(--white);
+    background: var(--black);
 }
 
 .fortalece-campanha-section .section-header p{
@@ -631,6 +745,7 @@ ul{
 }
 
 .card-top h3{
+    color: var(--white);
     margin:0;
     font-size:1.35rem;
     line-height:1.15;
@@ -784,7 +899,8 @@ ul{
 /* ============ Linha do Tempo ============ */
 .timeline-section{
     padding: 6rem 0;
-    background: linear-gradient(135deg, #0d4b94 0%, #082a55 100%);
+    /*background: linear-gradient(135deg, #0d4b94 0%, #082a55 100%);*/
+    background: var(--purple);
 }
 
 .timeline-section .section-header{
@@ -797,6 +913,8 @@ ul{
     font-size: clamp(3.2rem, 4vw, 4.6rem);
     margin-bottom: 1rem;
     line-height: 1;
+        text-transform:uppercase;
+
 }
 
 .timeline-section .section-header p{
@@ -841,6 +959,8 @@ ul{
     font-size: clamp(3rem, 6vw, 4rem);
     margin: 0;
     line-height: 0.98;
+        text-transform:uppercase;
+
 }
 
 .timeline-intro h2 span{
@@ -1091,8 +1211,21 @@ ul{
 }
 
 /*#region ========== Vídeos (carousel) ========== */
+.videos-section{
+    background: var(--blue);
+}
 .videos-section .section-header{
     margin-bottom:30px;
+}
+.videos-section .section-header h2
+{    
+    border-radius:50px 50px;
+    width: fit-content;
+    padding: 10px 20px;
+    justify-self: center;
+    
+    color: var(--blue);
+    background: var(--black);
 }
 .videos-carousel{
     position:relative;
@@ -1223,6 +1356,7 @@ ul{
 }
 
 .section-header h2{
+    text-transform:uppercase;
 
     font-size:3rem;
 
@@ -1249,7 +1383,8 @@ ul{
 }
 
 .title-header-votar-em-mim{
-    background: var(--white);
+    background: var(--black);
+    color: var(--white);
     border-radius:50px 50px;
     width: fit-content;
     padding: 10px 20px;
