@@ -19,18 +19,23 @@
         <div class="container">
 
             <a href="#" class="logo">
-                MANDI COELHO 
+                MANDI COELHO - 1600
             </a>
 
             <nav class="menu">
 
-                <ul>
+                <button class="menu-toggle" type="button" aria-controls="menu-links" aria-expanded="false">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <span class="sr-only">Abrir menu</span>
+                </button>
+
+                <ul id="menu-links">
 
                     <li><a href="#inicio">Início</a></li>
 
-                    <li><a href="#propostas">20 Pontos</a></li>
+                    <li><a href="#propostas">20 Pontos contra o sistema</a></li>
 
-                    <li><a href="#porque">Por que votar</a></li>
+                    <li><a href="#porque">Por que votar em mim?</a></li>
 
                     <li><a href="#campanha">Campanha</a></li>
 
@@ -40,7 +45,7 @@
 
                     <li><a href="#candidatos">Candidatos</a></li>
 
-                    <li><a href="#timeline">Linha do Tempo</a></li>
+                    <!--<li><a href="#timeline">Linha do Tempo</a></li>-->
 
                 </ul>
 
@@ -109,7 +114,8 @@
                         Mulheres vivas, livres e pelo socialismo
                     </h2>
                     <h1>
-                        Com os trabalhadores, contra o sistema!
+                        Com os trabalhadores,<br> 
+                        contra o sistema!
                     </h1>
 
                     <div class="hero-text-container">
@@ -124,7 +130,8 @@
                         
                 </div>
                 <div class="hero-image">
-                    <img src="./img/Mandi.png" alt="Mandi Coelho">
+                    <img class="hero-first-image" src="./img/Mandi.png" alt="Mandi Coelho">
+                    <img class="hero-image-hover" src="./img/Mandi-hero-image.jpeg" alt="" aria-hidden="true">
                 </div>
             </div>
             
@@ -174,7 +181,7 @@
             </div>
          </div>-->
         
-        <section id="propostas" class="section propostas">
+        <section id="propostas" class="section-propostas">
             <div class="container">
                 <header class="section-header">
                     <h2>
@@ -383,7 +390,7 @@
                     </article>
 
 
-                    <article class="card card-purple"> 
+                    <article class="card"> 
                         <span>17</span>
                         <h3>
                             Contra o agronegócio
@@ -539,7 +546,8 @@
                     </p>
                 </header>
 
-                <div class="construa-campanha">
+                <div class="construa-campanha">            
+                    <!--
                     <div class="construa-campanha-form">
                         <form id="contato-form">
                             <label for="nome">Nome:</label>
@@ -554,17 +562,26 @@
                             <button type="submit">Enviar</button>
                         </form>
                     </div>
+                                -->
 
                     <div class="construa-campanha-redes">
                         <h3>Divulgue</h3>
                         <h4>Redes sociais</h4>
-                        <!-- Adicione links para redes sociais aqui -->
-                        <button class="btn"><i class="fab fa-facebook-f"></i> Facebook</button>
-                        <button class="btn"><i class="fab fa-twitter"></i> Twitter</button>
-                        <button class="btn"><i class="fab fa-instagram"></i> Instagram</button>
+
+                        <a href="https://www.youtube.com/@mandi.rebeldia" target="_blank">
+                            <button class="btn"><i class="fa-brands fa-youtube"></i> YouTube</button>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@mandirebeldia" target="_blank">
+                            <button class="btn"><i class="fa-brands fa-tiktok"></i> TikTok</button>
+                        </a>
+
+                        <a href="https://www.instagram.com/mandi.rebeldia/" target="_blank"> 
+                            <button class="btn"> <i class="fab fa-instagram"></i> Instagram</button>
+                        </a>
 
                     </div>                
-            </div>
+                </div>
 
             
 
@@ -587,7 +604,7 @@
                     <article class="fortalece-card fortalece-card-left">
                         <div class="card-top">
                             <div class="card-icon card-icon-primary">
-                                <i class="fa-solid fa-hands-holding-heart"></i>
+                                <i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i>
                             </div>
                             <div>
                                 <h3>Nosso apoia-se</h3>
@@ -595,12 +612,14 @@
                             </div>
                         </div>
                         <div class="quote-card">
-                            <p class="quote-text">
-                                Meu partido não tem financiamento dos empresários, bilionários, BETs e big techs que financiam o PT, PL e 
-                                tantos outros partidos do sistema. Esse é o preço para defendermos o que acreditamos. 
-                                E se você também acha importante que uma voz assim vá mais longe, a sua contribuição faz a diferença. 
-                                Doe agora. Financie a luta contra o sistema.
-                            </p>
+                            <div>
+                                <p class="quote-text">
+                                    Meu partido não tem financiamento dos empresários, bilionários, BETs e big techs que financiam o PT, PL e 
+                                    tantos outros partidos do sistema. Esse é o preço para defendermos o que acreditamos. 
+                                    E se você também acha importante que uma voz assim vá mais longe, a sua contribuição faz a diferença. 
+                                    Doe agora. Financie a luta contra o sistema.
+                                </p>
+                            </div>
                             <div class="quote-meta">
                                 <strong>Nosso apoia-se: <a href="https://queroapoiar.com.br/mandi" target="_blank">https://queroapoiar.com.br/mandi</a></strong>
                                 <span>Apoiador da campanha</span>
@@ -639,7 +658,7 @@
             </div>
         </section>
 
-        <!-- ========== Vídeos do YouTube ========== -->
+        <!-- ========== Vídeos do YouTube ========== 
         <section id="videos" class="videos-section section">
             <div class="container">
                 <header class="section-header">
@@ -684,16 +703,16 @@
                 </div>
 
             </div>
-        </section>
+        </section>-->
         <!-- ========== Meus candidatos ========== -->
-        <section id="candidatos" class="section">
+        <section id="candidatos" class="candidatos-section">
             <div class="container">
                 <header class="section-header">
                     <h2>
                         Meus candidatos da Esquerda Revolucionária
                     </h2>
                     <p>
-                        Todos os candidatos do PSTU que estão comigo nessa luta
+                       <!-- Todos os candidatos do PSTU que estão comigo nessa luta-->
                     </p>
                 </header>
 
@@ -934,14 +953,17 @@
 
     <script>
         /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-            function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-            }
+        function myFunction() {
+            const menu = document.querySelector('.menu');
+            const toggle = document.querySelector('.menu-toggle');
+            const isOpen = menu.classList.toggle('is-open');
+
+            toggle.setAttribute('aria-expanded', isOpen);
+            toggle.querySelector('.sr-only').textContent = isOpen ? 'Fechar menu' : 'Abrir menu';
+        }
+
+        document.querySelector('.menu-toggle').addEventListener('click', myFunction);
+
     document.addEventListener('DOMContentLoaded', function() {
         const form = document.querySelector('#contato-form');
         if (form) {
