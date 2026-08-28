@@ -579,7 +579,22 @@ display:inline-flex;
 }
 
 .section-propostas{
+    
     background: var(--blue);
+}
+
+.section-propostas h2{
+    border-radius:50px 50px;
+    display:inline-block;
+    width:fit-content;
+    max-width:100%;
+    padding: 10px 20px;
+    margin:0 auto 15px;
+    line-height:1.1;
+    text-align:center;
+    
+    color: var(--white);
+    background: var(--black);
 }
 
 /*Botões*/
@@ -653,7 +668,7 @@ display:inline-flex;
 
 /* CAndidatos */
 .candidatos-section {
-    background: var(--red);
+    background: var(--blue);
 }
 
 .candidatos-section .section-header h2{
